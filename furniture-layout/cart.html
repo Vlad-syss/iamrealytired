@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/style.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Furniture</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header light">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__logo">
+              <img src="./img/head-light.png" alt="logo" />
+            </div>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li>
+                  <a href="./index.html" class="navigation__link">HOME</a>
+                </li>
+                <li class="spoiler">
+                  <a
+                    href="#"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                    class="navigation__link"
+                    >SHOP
+                    <i
+                      class="_icon-arrow-down iconca"
+                      style="
+                        transition: 0.3s;
+                        padding-left: 5px;
+                        font-size: 1.2rem;
+                      "
+                    ></i>
+                  </a>
+                  <ul class="spoiler__list">
+                    <li><a href="#" class="spoiler__link first">Menu №1</a></li>
+                    <li><a href="#" class="spoiler__link">Menu №2</a></li>
+                    <li><a href="#" class="spoiler__link">Menu №3</a></li>
+                    <li><a href="#" class="spoiler__link last">Menu №4</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./index.html" class="navigation__link">BLOG</a>
+                </li>
+                <li>
+                  <a href="./index.html" class="navigation__link">ABOUT US</a>
+                </li>
+              </ul>
+
+              <div class="search adaptive">
+                <div class="search__ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.5 17.5L12.5 12.5M14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z"
+                      stroke="#2F302C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  name="text"
+                  id="searchInput1"
+                  required
+                  class="search__input"
+                />
+                <label class="search__label">Furniture</label>
+              </div>
+            </nav>
+            <div class="search">
+              <div class="search__ico">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  style="margin-top: 3px"
+                >
+                  <path
+                    d="M18 17.5L13 12.5M14.6667 8.33333C14.6667 9.09938 14.5158 9.85792 14.2226 10.5657C13.9295 11.2734 13.4998 11.9164 12.9581 12.4581C12.4164 12.9998 11.7734 13.4295 11.0657 13.7226C10.3579 14.0158 9.59938 14.1667 8.83333 14.1667C8.06729 14.1667 7.30875 14.0158 6.60101 13.7226C5.89328 13.4295 5.25022 12.9998 4.70854 12.4581C4.16687 11.9164 3.73719 11.2734 3.44404 10.5657C3.15088 9.85792 3 9.09938 3 8.33333C3 6.78624 3.61458 5.30251 4.70854 4.20854C5.80251 3.11458 7.28624 2.5 8.83333 2.5C10.3804 2.5 11.8642 3.11458 12.9581 4.20854C14.0521 5.30251 14.6667 6.78624 14.6667 8.33333Z"
+                    stroke="#2F302C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                name="text"
+                id="searchInput"
+                required
+                class="search__input"
+              />
+              <label class="search__label" style="color: #7e7f7c"
+                >Furniture</label
+              >
+            </div>
+            <div class="header__block">
+              <div class="header__block_like">
+                <div class="header__block_ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M2.78546 6.48195C2.97391 6.02698 3.25014 5.61358 3.59837 5.26536C3.94659 4.91713 4.35998 4.64091 4.81496 4.45245C5.26993 4.26399 5.75757 4.16699 6.25003 4.16699C6.74249 4.16699 7.23013 4.26399 7.68511 4.45245C8.14008 4.64091 8.55348 4.91713 8.9017 5.26536L10 6.36369L11.0984 5.26536C11.8016 4.56209 12.7555 4.167 13.75 4.167C14.7446 4.167 15.6984 4.56209 16.4017 5.26536C17.105 5.96862 17.5001 6.92246 17.5001 7.91703C17.5001 8.91159 17.105 9.86543 16.4017 10.5687L10 16.9704L3.59837 10.5687C3.25014 10.2205 2.97391 9.80707 2.78546 9.3521C2.597 8.89712 2.5 8.40949 2.5 7.91703C2.5 7.42456 2.597 6.93693 2.78546 6.48195Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="header__block_text">LOVE</div>
+              </div>
+              <div class="header__block_like">
+                <div class="header__block_ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.333 9.16667V5.83333C13.333 4.94928 12.9818 4.10143 12.3567 3.47631C11.7316 2.85119 10.8837 2.5 9.99967 2.5C9.11562 2.5 8.26777 2.85119 7.64265 3.47631C7.01753 4.10143 6.66634 4.94928 6.66634 5.83333V9.16667M4.16634 7.5H15.833L16.6663 17.5H3.33301L4.16634 7.5Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="header__block_text">CART</div>
+              </div>
+            </div>
+            <div class="header__burger"><span></span></div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="way">
+          <div class="container way__container">
+            <div class="way__body">
+              <article class="way__box">
+                <h2 class="way__title">SHOPING CART</h2>
+                <p class="way__text">
+                  THIS IS YOUR CART BASED ON WHAT YOU WANTED TO BY
+                </p>
+              </article>
+              <div class="goal">
+                <div class="goal__range">
+                  <span></span>
+                </div>
+                <div class="goal__block">
+                  <article class="goal__box">
+                    <i class="goal__ico _active">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.333 9.16667V5.83333C13.333 4.94928 12.9818 4.10143 12.3567 3.47631C11.7316 2.85119 10.8837 2.5 9.99967 2.5C9.11562 2.5 8.26777 2.85119 7.64265 3.47631C7.01753 4.10143 6.66634 4.94928 6.66634 5.83333V9.16667M4.16634 7.5H15.833L16.6663 17.5H3.33301L4.16634 7.5Z"
+                          stroke="#2F302C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </i>
+                    <h4 class="goal__title">CART</h4>
+                    <p class="goal__text">
+                      Review all your product and edit the number.
+                    </p>
+                  </article>
+                  <article class="goal__box">
+                    <i class="goal__ico">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.121 17.804C7.21942 16.6179 9.58958 15.9963 12 16C14.5 16 16.847 16.655 18.879 17.804M15 10C15 10.7956 14.6839 11.5587 14.1213 12.1213C13.5587 12.6839 12.7956 13 12 13C11.2044 13 10.4413 12.6839 9.87868 12.1213C9.31607 11.5587 9 10.7956 9 10C9 9.20435 9.31607 8.44129 9.87868 7.87868C10.4413 7.31607 11.2044 7 12 7C12.7956 7 13.5587 7.31607 14.1213 7.87868C14.6839 8.44129 15 9.20435 15 10ZM21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                          stroke="#2F302C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </i>
+                    <h4 class="goal__title">CUSTOMER INFORMATION</h4>
+                    <p class="goal__text">
+                      Add your name, phone number and address.
+                    </p>
+                  </article>
+                  <article class="goal__box">
+                    <i class="goal__ico">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M3 10H21M7 15H8M12 15H13M6 19H18C18.7956 19 19.5587 18.6839 20.1213 18.1213C20.6839 17.5587 21 16.7956 21 16V8C21 7.20435 20.6839 6.44129 20.1213 5.87868C19.5587 5.31607 18.7956 5 18 5H6C5.20435 5 4.44129 5.31607 3.87868 5.87868C3.31607 6.44129 3 7.20435 3 8V16C3 16.7956 3.31607 17.5587 3.87868 18.1213C4.44129 18.6839 5.20435 19 6 19Z"
+                          stroke="#2F302C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </i>
+                    <h4 class="goal__title">SHIPPING & PAYMENT</h4>
+                    <p class="goal__text">
+                      With many payment method, included yours.
+                    </p>
+                  </article>
+                  <article class="goal__box">
+                    <i class="goal__ico">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213Z"
+                          stroke="#2F302C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.45801 12C3.73201 7.943 7.52301 5 12 5C16.478 5 20.268 7.943 21.542 12C20.268 16.057 16.478 19 12 19C7.52301 19 3.73201 16.057 2.45801 12Z"
+                          stroke="#2F302C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </i>
+                    <h4 class="goal__title">REVIEW</h4>
+                    <p class="goal__text">
+                      View all your information before the confimation.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cart">
+          <div class="container">
+            <div class="cart__body">
+              <div class="cart__main">
+                <div id="cartItems" class="cart__main_wrapper"></div>
+                <div data-empty class="cart__empty">
+                  <h1 class="cart__empty_title">
+                    ☹ It looks like you haven't added any products to your cart
+                    yet
+                  </h1>
+                  <p class="cart__empty_text">
+                    In order to view the product catalog, click on the link
+                  </p>
+                  <a href="./catalog.html" class="cart__empty_link">CATALOG</a>
+                </div>
+              </div>
+              <div class="cart__form">
+                <div class="cart__form_texts">
+                  <h3>ORDER SUMMARY</h3>
+                  <p>Apply your monthly voucher to get more discount!</p>
+                </div>
+                <form action="#" class="cart__form_form">
+                  <input
+                    type="text"
+                    name="code"
+                    class="cart__form_input form_code"
+                    placeholder="Your voucher code"
+                  />
+                  <div class="cart__form_total">
+                    <div class="cart__form_box">
+                      <div class="cart__form_text">Price</div>
+                      <div class="cart__form_count">
+                        $<span data-price>0.00</span>
+                      </div>
+                    </div>
+                    <div class="cart__form_box">
+                      <div class="cart__form_text">Discount 10%</div>
+                      <div class="cart__form_count">
+                        -$<span data-price-dis>0.00</span>
+                      </div>
+                    </div>
+                    <div class="cart__form_box">
+                      <div class="cart__form_text">Total Price</div>
+                      <div class="cart__form_count-total">
+                        $ <span data-total>0.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <textarea
+                    class="cart__form_input form_area"
+                    placeholder="Write your notes here..."
+                  ></textarea>
+                </form>
+                <button class="cart__form_button none" type="button">
+                  PROCEED TO CHECKOUT
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="choose" id="about">
+          <div class="container">
+            <div class="choose__body">
+              <h1 class="choose__title">WHY CHOOSE US?</h1>
+              <div class="choose__content">
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose1"></div>
+                  <h1 class="choose__box_title">GLOBAL DELIVERY</h1>
+                  <p class="choose__box_text">
+                    Experience Hassle-Free Shipping and Seamless Global
+                    Connectivity with Our Trustworthy and Efficient Delivery
+                    Service, Bringing the World to Your Fingertips!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose2"></div>
+                  <h1 class="choose__box_title">FREE SHIPPING</h1>
+                  <p class="choose__box_text">
+                    Shop to Your Heart's Content Without Worrying About Shipping
+                    Costs: Our Free Shipping Service Delivers Your Purchases
+                    with a Smile, Straight to Your Doorstep!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose3"></div>
+                  <h1 class="choose__box_title">24/7 SUPPORTING</h1>
+                  <p class="choose__box_text">
+                    Shop with Confidence Anytime, Anywhere: Our Free Shipping
+                    Service Comes with 24/7 Support to Ensure Your Packages
+                    Arrive Safely and On Time!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose4"></div>
+                  <h1 class="choose__box_title">DAILY EMAIL</h1>
+                  <p class="choose__box_text">
+                    Stay Up-to-Date with Your Deliveries: Enjoy the Convenience
+                    of Daily Email Updates with Our Free Shipping Service,
+                    Making Your Online Shopping Experience Even More Enjoyable!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose5"></div>
+                  <h1 class="choose__box_title">EASY PAYMENT</h1>
+                  <p class="choose__box_text">
+                    Shop and Pay with Ease: Our Free Shipping Service Not Only
+                    Delivers Your Packages for Free, but Also Offers Easy
+                    Payment Options, Making Your Shopping Experience a Breeze!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose6"></div>
+                  <h1 class="choose__box_title">MONTHLY VOUCHER</h1>
+                  <p class="choose__box_text">
+                    More Than Just Free Shipping: Our Service Rewards Your
+                    Loyalty with Monthly Vouchers, Giving You More Reasons to
+                    Shop and Save on Your Favorite Products!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="best">
+          <div class="container">
+            <div class="best__body">
+              <div class="best__box">
+                <h1 class="best__title">BEST COMBINED WITH:</h1>
+                <p class="best__text">
+                  THESE COMBINATION WILL MAKE YOUR HOME TONE - SUR - TONE
+                </p>
+              </div>
+              <div class="product bestl">
+                <div data-id="1" class="card">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=1"
+                      ><img src="./img/fil1.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=1"
+                        >URBAN LUX HIGH CHAIR</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=1"
+                        >$266.15</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div data-id="2" class="card">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=2"
+                      ><img src="./img/fil2.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=2"
+                        >MORDERN BLACK HANGING LIGHT</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=2"
+                        >$159.6</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div data-id="3" class="card">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=3"
+                      ><img src="./img/fil3.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=3"
+                        >METRO FUSION TABLE</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=3"
+                        >$223.30</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <div data-spollers="710,max" class="footer__content">
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  CUSTOMER SERVICE
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link">Help & FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Return & Refund</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Shipping Policy</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Customs and Taxes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Customers’s Reviews</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  COMPANY
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >About Japan with love</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Special Deals & Offers</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Terms of Service</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  HELP CENTER
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Order Information</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Shipping Options</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >International Shipping</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Payment Options</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  RETURN & WARRANTLY
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Returns & Exchange Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Returns Center</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Warranty Policy</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Warranty Registration</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Warranty Repair Center</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <p class="footer__bottom_text">
+                Furnitur © Copyright 2020, Inc. All rights reserved
+              </p>
+              <div class="footer__bottom_icon">
+                <a href="#" class="footer__bottom_ico _icon-footer1"></a>
+                <a href="#" class="footer__bottom_ico _icon-footer2"></a>
+                <a href="#" class="footer__bottom_ico _icon-footer3"></a>
+                <a href="#" class="footer__bottom_ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_844_503)">
+                      <path
+                        d="M9.99968 19.1522C15.0623 19.1522 19.1663 15.0516 19.1663 9.99311C19.1663 4.93467 15.0623 0.833984 9.99968 0.833984C4.93706 0.833984 0.833008 4.93467 0.833008 9.99311C0.833008 15.0516 4.93706 19.1522 9.99968 19.1522Z"
+                        fill="white"
+                      />
+                      <path
+                        class="path1"
+                        d="M9.99967 0.833984C4.93726 0.833984 0.833008 4.93486 0.833008 9.99311C0.833008 13.8754 3.24727 17.1923 6.65742 18.5266C6.57443 17.8029 6.50653 16.6872 6.6876 15.8957C6.85358 15.1795 7.75893 11.3425 7.75893 11.3425C7.75893 11.3425 7.48733 10.7922 7.48733 9.98557C7.48733 8.71159 8.2267 7.76175 9.14714 7.76175C9.93177 7.76175 10.309 8.34975 10.309 9.05082C10.309 9.83481 9.81106 11.0108 9.547 12.1039C9.32821 13.016 10.0072 13.7623 10.905 13.7623C12.5347 13.7623 13.7871 12.0436 13.7871 9.57096C13.7871 7.3773 12.2102 5.84701 9.95441 5.84701C7.34398 5.84701 5.81243 7.79945 5.81243 9.81973C5.81243 10.6037 6.11421 11.448 6.49144 11.9079C6.56689 11.9983 6.57443 12.0812 6.5518 12.1717C6.4839 12.4582 6.32546 13.0838 6.29529 13.212C6.25756 13.3778 6.15948 13.4155 5.98596 13.3326C4.83918 12.7974 4.12245 11.1314 4.12245 9.78204C4.12245 6.89484 6.21984 4.24133 10.1807 4.24133C13.357 4.24133 15.8316 6.50284 15.8316 9.53327C15.8316 12.6919 13.8399 15.2323 11.0785 15.2323C10.1506 15.2323 9.27539 14.7498 8.98116 14.1769C8.98116 14.1769 8.52094 15.9258 8.40777 16.3555C8.20406 17.1546 7.64577 18.1496 7.26854 18.7602C8.12862 19.0241 9.03397 19.1673 9.98459 19.1673C15.047 19.1673 19.1513 15.0664 19.1513 10.0082C19.1663 4.93486 15.0621 0.833984 9.99967 0.833984Z"
+                        fill="#2F302C"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_844_503">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="follow" id="love">
+        <div class="follow__area"></div>
+        <div class="follow__body">
+          <div class="follow__content">
+            <div data-id="" class="follow__wrapper"></div>
+            <div data-cart-empty class="follow__empty">
+              <h1 class="follow__empty_title">
+                ☹ It looks like you haven't liked any products yet
+              </h1>
+              <p class="follow__empty_text">
+                In order to view the product catalog, click on the link =>
+                <a href="./catalog.html">Catalog</a>
+              </p>
+            </div>
+            <div class="follow__close"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./fonts/demo-files/demo.js"></script>
+    <script src="./js/adaptiveSpoller.js"></script>
+    <script src="./js/storage.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      document
+        .getElementById("searchInput1")
+        .addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            var searchText = this.value;
+            sessionStorage.setItem("searchText", searchText);
+            window.location.href = "catalog.html";
+          }
+        });
+      document
+        .getElementById("searchInput")
+        .addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            var searchText = this.value;
+            sessionStorage.setItem("searchText", searchText);
+            window.location.href = "catalog.html";
+          }
+        });
+    </script>
+  </body>
+</html>

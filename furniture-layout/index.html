@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./fonts/style.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Furniture</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="home">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__logo">
+              <img src="./img/Logo.png" alt="logo" />
+            </div>
+            <nav class="navigation">
+              <ul class="navigation__list navigation__list_home">
+                <li><a href="#" class="navigation__link">HOME</a></li>
+                <li class="spoiler">
+                  <a
+                    href="#home"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                    class="navigation__link"
+                    >SHOP
+                    <i
+                      class="_icon-arrow-down iconca"
+                      style="
+                        transition: 0.3s;
+                        padding-left: 5px;
+                        font-size: 1.2rem;
+                      "
+                    ></i>
+                  </a>
+                  <ul class="spoiler__list">
+                    <li><a href="#" class="spoiler__link first">Menu №1</a></li>
+                    <li><a href="#" class="spoiler__link">Menu №2</a></li>
+                    <li><a href="#" class="spoiler__link">Menu №3</a></li>
+                    <li><a href="#" class="spoiler__link last">Menu №4</a></li>
+                  </ul>
+                </li>
+                <li><a href="#blog" class="navigation__link">BLOG</a></li>
+                <li><a href="#about" class="navigation__link">ABOUT US</a></li>
+              </ul>
+
+              <form action="" class="search adaptive">
+                <div class="search__ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M18 17.5L13 12.5M14.6667 8.33333C14.6667 9.09938 14.5158 9.85792 14.2226 10.5657C13.9295 11.2734 13.4998 11.9164 12.9581 12.4581C12.4164 12.9998 11.7734 13.4295 11.0657 13.7226C10.3579 14.0158 9.59938 14.1667 8.83333 14.1667C8.06729 14.1667 7.30875 14.0158 6.60101 13.7226C5.89328 13.4295 5.25022 12.9998 4.70854 12.4581C4.16687 11.9164 3.73719 11.2734 3.44404 10.5657C3.15088 9.85792 3 9.09938 3 8.33333C3 6.78624 3.61458 5.30251 4.70854 4.20854C5.80251 3.11458 7.28624 2.5 8.83333 2.5C10.3804 2.5 11.8642 3.11458 12.9581 4.20854C14.0521 5.30251 14.6667 6.78624 14.6667 8.33333Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  required
+                  id="searchInput1"
+                  class="search__input"
+                />
+                <label class="search__label">Search something</label>
+              </form>
+            </nav>
+            <div class="search">
+              <div class="search__ico">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M18 17.5L13 12.5M14.6667 8.33333C14.6667 9.09938 14.5158 9.85792 14.2226 10.5657C13.9295 11.2734 13.4998 11.9164 12.9581 12.4581C12.4164 12.9998 11.7734 13.4295 11.0657 13.7226C10.3579 14.0158 9.59938 14.1667 8.83333 14.1667C8.06729 14.1667 7.30875 14.0158 6.60101 13.7226C5.89328 13.4295 5.25022 12.9998 4.70854 12.4581C4.16687 11.9164 3.73719 11.2734 3.44404 10.5657C3.15088 9.85792 3 9.09938 3 8.33333C3 6.78624 3.61458 5.30251 4.70854 4.20854C5.80251 3.11458 7.28624 2.5 8.83333 2.5C10.3804 2.5 11.8642 3.11458 12.9581 4.20854C14.0521 5.30251 14.6667 6.78624 14.6667 8.33333Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                name="text"
+                id="searchInput"
+                required
+                class="search__input"
+              />
+              <label class="search__label">Search something</label>
+            </div>
+            <div class="header__block">
+              <div class="header__block_like">
+                <div class="header__block_ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M2.78546 6.48195C2.97391 6.02698 3.25014 5.61358 3.59837 5.26536C3.94659 4.91713 4.35998 4.64091 4.81496 4.45245C5.26993 4.26399 5.75757 4.16699 6.25003 4.16699C6.74249 4.16699 7.23013 4.26399 7.68511 4.45245C8.14008 4.64091 8.55348 4.91713 8.9017 5.26536L10 6.36369L11.0984 5.26536C11.8016 4.56209 12.7555 4.167 13.75 4.167C14.7446 4.167 15.6984 4.56209 16.4017 5.26536C17.105 5.96862 17.5001 6.92246 17.5001 7.91703C17.5001 8.91159 17.105 9.86543 16.4017 10.5687L10 16.9704L3.59837 10.5687C3.25014 10.2205 2.97391 9.80707 2.78546 9.3521C2.597 8.89712 2.5 8.40949 2.5 7.91703C2.5 7.42456 2.597 6.93693 2.78546 6.48195Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="header__block_text">LOVE</div>
+              </div>
+              <div class="header__block_like">
+                <div class="header__block_ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.333 9.16667V5.83333C13.333 4.94928 12.9818 4.10143 12.3567 3.47631C11.7316 2.85119 10.8837 2.5 9.99967 2.5C9.11562 2.5 8.26777 2.85119 7.64265 3.47631C7.01753 4.10143 6.66634 4.94928 6.66634 5.83333V9.16667M4.16634 7.5H15.833L16.6663 17.5H3.33301L4.16634 7.5Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <a href="./cart.html" class="header__block_text">CART</a>
+              </div>
+            </div>
+            <div class="header__burger"><span></span></div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="welcome">
+          <div class="container">
+            <div class="welcome__body">
+              <div class="welcome__box">
+                <h2 class="welcome__sabtitle">WELCOME TO OUR</h2>
+                <div class="welcome__title">
+                  <h1>
+                    <span>FUNITURE</span><br />
+                    GALLERY
+                  </h1>
+                  <div class="title-line"></div>
+                </div>
+                <h2 class="welcome__sabtitle">BROWSE OUR SELECTIONS</h2>
+                <p class="welcome__text">
+                  Featuring sleek designs and innovative materials that
+                  seamlessly blend form and function.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="started">
+          <div class="container">
+            <div class="started__body">
+              <div class="started__box reverse">
+                <div class="started__content">
+                  <h1 class="started__title">HANGING LIGHT</h1>
+                  <p class="started__text">
+                    Upgrade your space with our modern hanging light, featuring
+                    sleek lines, energy-efficient LED lighting, and adjustable
+                    height.
+                  </p>
+                  <a href="#" class="started__link"
+                    >View more <span class="_icon-arrow-right"></span
+                  ></a>
+                </div>
+                <div class="started__img right">
+                  <img src="./img/start1.png" alt="alt" />
+                  <img src="./img/start2.png" alt="alt" />
+                </div>
+              </div>
+              <div class="started__box big">
+                <div class="started__content center">
+                  <h1 class="started__title">DESIGNED SOFA</h1>
+                  <p class="started__text">
+                    Introducing our newest sofa, the perfect combination of
+                    style and comfort, designed to elevate your living space and
+                    provide ultimate relaxation.
+                  </p>
+                  <a href="#" class="started__link"
+                    >View more <span class="_icon-arrow-right"></span
+                  ></a>
+                </div>
+                <div class="started__img">
+                  <img src="./img/start3.png" alt="alt" />
+                </div>
+              </div>
+              <div class="started__box ok">
+                <div class="started__content">
+                  <h1 class="started__title">NOVA CHAIR</h1>
+                  <p class="started__text">
+                    a stylish and comfortable addition to any room, with its
+                    sleek design and plush cushions creating the ultimate
+                    seating experience.
+                  </p>
+                  <a href="#" class="started__link"
+                    >View more <span class="_icon-arrow-right"></span
+                  ></a>
+                </div>
+                <div class="started__img right">
+                  <img src="./img/started4.png" alt="alt" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="review">
+          <div class="container">
+            <div class="review__body">
+              <div class="review__block">
+                <h1 class="review__title">REVIEWD BY CUSTOMERS</h1>
+                <p class="review__text">WHAT OUR CUSTOMERS THINK ABOUT US?</p>
+              </div>
+              <div class="review__container swiper-container">
+                <div class="review__wrapper swiper-wrapper">
+                  <div class="slider-box swiper-slide">
+                    <div class="slider-box__img">
+                      <img src="./img/Avatar.png" alt="alt" />
+                    </div>
+                    <ul class="slider-box__list">
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <p class="slider-box__text">
+                      The sofa is not only incredibly stylish, but also very
+                      comfortable to lounge on. The clean lines and minimalist
+                      design make it a perfect fit for my modern living room,
+                      and the neutral color scheme allows me to easily
+                      incorporate other accent pieces. The sofa is also very
+                      sturdy and well-constructed, so I know it will last me for
+                      years to come."
+                    </p>
+                    <h2 class="slider-box__name">- Larry Jonhson -</h2>
+                  </div>
+                  <div class="slider-box swiper-slide">
+                    <div class="slider-box__img">
+                      <img src="./img/Avatar.png" alt="alt" />
+                    </div>
+                    <ul class="slider-box__list">
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <p class="slider-box__text">
+                      Vintage feel that is sure to impress your dinner guests.
+                      The table is also very functional, with ample space for
+                      family meals or entertaining. I appreciate the attention
+                      to detail and quality materials used in its construction.
+                      This is definitely a piece that will become a cherished
+                      family heirloom."
+                    </p>
+                    <h2 class="slider-box__name">- Larry Jonhson -</h2>
+                  </div>
+                  <div class="slider-box swiper-slide">
+                    <div class="slider-box__img">
+                      <img src="./img/Avatar.png" alt="alt" />
+                    </div>
+                    <ul class="slider-box__list">
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <p class="slider-box__text">
+                      The sofa is not only incredibly stylish, but also very
+                      comfortable to lounge on. The clean lines and minimalist
+                      design make it a perfect fit for my modern living room,
+                      and the neutral color scheme allows me to easily
+                      incorporate other accent pieces. The sofa is also very
+                      sturdy and well-constructed, so I know it will last me for
+                      years to come."
+                    </p>
+                    <h2 class="slider-box__name">- Larry Jonhson -</h2>
+                  </div>
+                  <div class="slider-box swiper-slide">
+                    <div class="slider-box__img">
+                      <img src="./img/Avatar.png" alt="alt" />
+                    </div>
+                    <ul class="slider-box__list">
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="slider-box__link"
+                          ><i class="_icon-star"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <p class="slider-box__text">
+                      Vintage feel that is sure to impress your dinner guests.
+                      The table is also very functional, with ample space for
+                      family meals or entertaining. I appreciate the attention
+                      to detail and quality materials used in its construction.
+                      This is definitely a piece that will become a cherished
+                      family heirloom.
+                    </p>
+                    <h2 class="slider-box__name">- Larry Jonhson -</h2>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="promo">
+          <div class="container">
+            <div class="promo__body">
+              <div class="module">
+                <div class="module__logo">
+                  <img src="./img/Module-logo.png" alt="logo" />
+                </div>
+                <h1 class="module__title">SLEEKLINE MODULUS MORDERN SOFA</h1>
+                <a class="module__link main-link" href="./catalog.html"
+                  >VIEW ALL PROMO
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="25"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.5 5V10M10.5 10V15M10.5 10H15.5M10.5 10H5.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="promo__img">
+                <img src="./img/promo-img.png" alt="alt" />
+              </div>
+              <div class="privilege">
+                <div class="privilege__box">
+                  <div class="privilege__ico">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.884 22.6667H19.1147M16 4V5.33333M24.4853 7.51467L23.5427 8.45733M28 16H26.6667M5.33333 16H4M8.45733 8.45733L7.51467 7.51467M11.2853 20.7147C10.3532 19.7822 9.7184 18.5944 9.4613 17.3012C9.20421 16.008 9.33634 14.6677 9.84097 13.4496C10.3456 12.2315 11.2001 11.1905 12.2964 10.458C13.3927 9.72553 14.6815 9.33458 16 9.33458C17.3185 9.33458 18.6073 9.72553 19.7036 10.458C20.7999 11.1905 21.6544 12.2315 22.159 13.4496C22.6637 14.6677 22.7958 16.008 22.5387 17.3012C22.2816 18.5944 21.6468 19.7822 20.7147 20.7147L19.984 21.444C19.5663 21.8618 19.2349 22.3578 19.0089 22.9036C18.7829 23.4495 18.6666 24.0345 18.6667 24.6253V25.3333C18.6667 26.0406 18.3857 26.7189 17.8856 27.219C17.3855 27.719 16.7072 28 16 28C15.2928 28 14.6145 27.719 14.1144 27.219C13.6143 26.7189 13.3333 26.0406 13.3333 25.3333V24.6253C13.3333 23.432 12.8587 22.2867 12.016 21.444L11.2853 20.7147Z"
+                        stroke="#2F302C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="privilege__text">
+                    True marvel of engineering and design, durable frame that
+                    can support the heaviest of loads.
+                  </p>
+                </div>
+
+                <div class="privilege__box">
+                  <div class="privilege__ico">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.333 4V13.3333H26.6663L14.6663 28V18.6667H5.33301L17.333 4Z"
+                        stroke="#2F302C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="privilege__text">
+                    Includes high-quality fabrics, metal frames, and innovative
+                    composites.
+                  </p>
+                </div>
+
+                <div class="privilege__box">
+                  <div class="privilege__ico">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <path
+                        d="M26.6663 17.333V7.99967C26.6663 7.29243 26.3854 6.61415 25.8853 6.11406C25.3852 5.61396 24.7069 5.33301 23.9997 5.33301H7.99967C7.29243 5.33301 6.61415 5.61396 6.11406 6.11406C5.61396 6.61415 5.33301 7.29243 5.33301 7.99967V17.333M26.6663 17.333V23.9997C26.6663 24.7069 26.3854 25.3852 25.8853 25.8853C25.3852 26.3854 24.7069 26.6663 23.9997 26.6663H7.99967C7.29243 26.6663 6.61415 26.3854 6.11406 25.8853C5.61396 25.3852 5.33301 24.7069 5.33301 23.9997V17.333M26.6663 17.333H23.2183C22.8647 17.3331 22.5257 17.4736 22.2757 17.7237L19.057 20.9423C18.807 21.1924 18.4679 21.3329 18.1143 21.333H13.885C13.5314 21.3329 13.1923 21.1924 12.9423 20.9423L9.72367 17.7237C9.47368 17.4736 9.1346 17.3331 8.78101 17.333H5.33301"
+                        stroke="#2F302C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="privilege__text">
+                    Stylish addition to your living room, or a functional piece
+                    for your outdoor patio.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filter">
+          <div class="container">
+            <div class="filter__body">
+              <h1 class="filter__title">FEATURED PRODUCTS</h1>
+              <ul class="filter__list">
+                <li data-f="all" class="filter__item active">ALL</li>
+                <li data-f="onSale" class="filter__item">ON SALE</li>
+                <li data-f="sofa" class="filter__item">SOFA</li>
+                <li data-f="hangingLight" class="filter__item">
+                  HANGING LIGHT
+                </li>
+              </ul>
+              <div class="filter__content">
+                <div data-id="1" class="card sofa">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=1"
+                      ><img src="./img/fil1.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=1"
+                        >URBAN LUX HIGH CHAIR</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=1"
+                        >$266.15</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div data-id="2" class="card hangingLight">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=2"
+                      ><img src="./img/fil2.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=2"
+                        >MORDERN BLACK HANGING LIGHT</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=2"
+                        >$159.6</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div data-id="3" class="card sofa">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=3"
+                      ><img src="./img/fil3.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=3"
+                        >METRO FUSION TABLE</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=3"
+                        >$223.30</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div data-id="4" class="card hangingLight">
+                  <a
+                    data-product
+                    href="productCard.html?productId=4"
+                    class="card__img"
+                  >
+                    <img src="./img/fil4.png" alt="img" />
+                  </a>
+                  <div class="card__box">
+                    <a
+                      data-product
+                      href="productCard.html?productId=4"
+                      class="card__title"
+                      >LUMIN DESK LAMP</a
+                    >
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=4"
+                        >$147.80</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div data-id="5" class="card onSale">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=5"
+                      ><img src="./img/fil5.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=5"
+                        >TIMELESS EDGE HANGING CLOCK</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=5"
+                        >$107.6</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div data-id="6" class="card hangingLight">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=6"
+                      ><img src="./img/fil6.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=6"
+                        >ZENITH PENDANT LIGHT</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=6"
+                        >$206.59</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sale">
+          <div class="container">
+            <div class="sale__body">
+              <div class="mordern">
+                <h1 class="mordern__title">MORDERN BRONZE HANGING LIGHT</h1>
+                <ul class="mordern__list">
+                  <li class="_icon-star"></li>
+                  <li class="_icon-star"></li>
+                  <li class="_icon-star"></li>
+                  <li class="_icon-star"></li>
+                  <li class="_icon-star"></li>
+                </ul>
+                <div class="mordern__price">
+                  <p class="mordern__prev"><s>$325.41</s></p>
+                  <div class="mordern__box">
+                    <h2 class="mordern__new">$235.41</h2>
+                    <p class="mordern__minus">-30%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sale__img">
+                <img src="./img/sale-img.png" alt="alt" />
+              </div>
+              <div class="buy">
+                <p class="buy__text">
+                  Stunning lighting fixture that combines contemporary style
+                  with timeless elegance. Featuring a sleek and minimalist
+                  design, this hanging light is crafted from high-quality bronze
+                  and finished with a smooth and lustrous surface.
+                </p>
+                <a href="./catalog.html" class="buy__link main-link">
+                  BUY NOW
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="25"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.5 5V10M10.5 10V15M10.5 10H15.5M10.5 10H5.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="choose" id="about">
+          <div class="container">
+            <div class="choose__body">
+              <h1 class="choose__title">WHY CHOOSE US?</h1>
+              <div class="choose__content">
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose1"></div>
+                  <h1 class="choose__box_title">GLOBAL DELIVERY</h1>
+                  <p class="choose__box_text">
+                    Experience Hassle-Free Shipping and Seamless Global
+                    Connectivity with Our Trustworthy and Efficient Delivery
+                    Service, Bringing the World to Your Fingertips!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose2"></div>
+                  <h1 class="choose__box_title">FREE SHIPPING</h1>
+                  <p class="choose__box_text">
+                    Shop to Your Heart's Content Without Worrying About Shipping
+                    Costs: Our Free Shipping Service Delivers Your Purchases
+                    with a Smile, Straight to Your Doorstep!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose3"></div>
+                  <h1 class="choose__box_title">24/7 SUPPORTING</h1>
+                  <p class="choose__box_text">
+                    Shop with Confidence Anytime, Anywhere: Our Free Shipping
+                    Service Comes with 24/7 Support to Ensure Your Packages
+                    Arrive Safely and On Time!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose4"></div>
+                  <h1 class="choose__box_title">DAILY EMAIL</h1>
+                  <p class="choose__box_text">
+                    Stay Up-to-Date with Your Deliveries: Enjoy the Convenience
+                    of Daily Email Updates with Our Free Shipping Service,
+                    Making Your Online Shopping Experience Even More Enjoyable!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose5"></div>
+                  <h1 class="choose__box_title">EASY PAYMENT</h1>
+                  <p class="choose__box_text">
+                    Shop and Pay with Ease: Our Free Shipping Service Not Only
+                    Delivers Your Packages for Free, but Also Offers Easy
+                    Payment Options, Making Your Shopping Experience a Breeze!
+                  </p>
+                </div>
+                <div class="choose__box">
+                  <div class="choose__box_ico _icon-choose6"></div>
+                  <h1 class="choose__box_title">MONTHLY VOUCHER</h1>
+                  <p class="choose__box_text">
+                    More Than Just Free Shipping: Our Service Rewards Your
+                    Loyalty with Monthly Vouchers, Giving You More Reasons to
+                    Shop and Save on Your Favorite Products!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="blog" id="blog">
+          <div class="container">
+            <div class="blog__body">
+              <div class="blog__texts">
+                <h1>OUR BLOGS</h1>
+                <p>WHAT WE THINK ABOUT INTERIOR DESIGN?</p>
+              </div>
+              <div class="blog__content">
+                <div class="blog__card">
+                  <div class="blog__card_img">
+                    <img src="./img/blog1.png" alt="alt" />
+                  </div>
+                  <div class="blog__card_texts">
+                    <p class="blog__card_date">20.04.2021 | 14:45</p>
+                    <h1 class="blog__card_title">
+                      The Evolving Landscape of Furniture Design: Latest Trends
+                      and Innovations.
+                    </h1>
+                    <p class="blog__card_text">
+                      Furniture design has come a long way in recent years, with
+                      new trends and innovations constantly emerging to push the
+                      boundaries of what's possible. From sustainable materials
+                      to smart home technology, there are many exciting
+                      developments that are changing the face of modern
+                      furniture.
+                    </p>
+                    <div class="blog__card_box">
+                      <p class="blog__card_about">Living</p>
+                      <p class="blog__card_about">Furniture Design</p>
+                      <p class="blog__card_about">Smart home</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog__card">
+                  <div class="blog__card_img">
+                    <img src="./img/blog2.png" alt="alt" />
+                  </div>
+                  <div class="blog__card_texts">
+                    <p class="blog__card_date">20.04.2021 | 14:45</p>
+                    <h1 class="blog__card_title">
+                      Upgrade Your Home or Office with the Latest in Sleek and
+                      Stylish Designs.
+                    </h1>
+                    <p class="blog__card_text">
+                      One of the key features of modern furniture is its
+                      versatility. Today's furniture is designed to serve
+                      multiple purposes, whether it's a sofa bed that transforms
+                      into a comfortable sleeping space, or a coffee table that
+                      doubles as a storage unit. Modern furniture is also built
+                      with convenience in mind, with many pieces featuring
+                      easy-to-use mechanisms, such as adjustable
+                    </p>
+                    <div class="blog__card_box">
+                      <p class="blog__card_about">Innovative</p>
+                      <p class="blog__card_about">Comfort</p>
+                      <p class="blog__card_about">Multi Purpose</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog__card">
+                  <div class="blog__card_img">
+                    <img src="./img/blog3.png" alt="alt" />
+                  </div>
+                  <div class="blog__card_texts">
+                    <p class="blog__card_date">20.04.2021 | 14:45</p>
+                    <h1 class="blog__card_title">
+                      Functionality Meets Style" - The Perfect Combination for
+                      Today's Homes and Offices.
+                    </h1>
+                    <p class="blog__card_text">
+                      Modern furniture is a reflection of our evolving tastes
+                      and needs, combining both form and function to create
+                      pieces that are both aesthetically pleasing and practical.
+                      With its sleek designs and versatile features, modern
+                      furniture has become a popular choice for homes and
+                      offices alike.
+                    </p>
+                    <div class="blog__card_box">
+                      <p class="blog__card_about">Convenient</p>
+                      <p class="blog__card_about">Sleek Design</p>
+                      <p class="blog__card_about">Mordern</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <div data-spollers="710,max" class="footer__content">
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  CUSTOMER SERVICE
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link">Help & FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Return & Refund</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Shipping Policy</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Customs and Taxes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Customers’s Reviews</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  COMPANY
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >About Japan with love</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Special Deals & Offers</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Terms of Service</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  HELP CENTER
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Order Information</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Shipping Options</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >International Shipping</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Payment Options</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  RETURN & WARRANTLY
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Returns & Exchange Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Returns Center</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Warranty Policy</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Warranty Registration</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Warranty Repair Center</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <p class="footer__bottom_text">
+                Furnitur © Copyright 2020, Inc. All rights reserved
+              </p>
+              <div class="footer__bottom_icon">
+                <a href="#" class="footer__bottom_ico _icon-footer1"></a>
+                <a href="#" class="footer__bottom_ico _icon-footer2"></a>
+                <a href="#" class="footer__bottom_ico _icon-footer3"></a>
+                <a href="#" class="footer__bottom_ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_844_503)">
+                      <path
+                        d="M9.99968 19.1522C15.0623 19.1522 19.1663 15.0516 19.1663 9.99311C19.1663 4.93467 15.0623 0.833984 9.99968 0.833984C4.93706 0.833984 0.833008 4.93467 0.833008 9.99311C0.833008 15.0516 4.93706 19.1522 9.99968 19.1522Z"
+                        fill="white"
+                      />
+                      <path
+                        class="path1"
+                        d="M9.99967 0.833984C4.93726 0.833984 0.833008 4.93486 0.833008 9.99311C0.833008 13.8754 3.24727 17.1923 6.65742 18.5266C6.57443 17.8029 6.50653 16.6872 6.6876 15.8957C6.85358 15.1795 7.75893 11.3425 7.75893 11.3425C7.75893 11.3425 7.48733 10.7922 7.48733 9.98557C7.48733 8.71159 8.2267 7.76175 9.14714 7.76175C9.93177 7.76175 10.309 8.34975 10.309 9.05082C10.309 9.83481 9.81106 11.0108 9.547 12.1039C9.32821 13.016 10.0072 13.7623 10.905 13.7623C12.5347 13.7623 13.7871 12.0436 13.7871 9.57096C13.7871 7.3773 12.2102 5.84701 9.95441 5.84701C7.34398 5.84701 5.81243 7.79945 5.81243 9.81973C5.81243 10.6037 6.11421 11.448 6.49144 11.9079C6.56689 11.9983 6.57443 12.0812 6.5518 12.1717C6.4839 12.4582 6.32546 13.0838 6.29529 13.212C6.25756 13.3778 6.15948 13.4155 5.98596 13.3326C4.83918 12.7974 4.12245 11.1314 4.12245 9.78204C4.12245 6.89484 6.21984 4.24133 10.1807 4.24133C13.357 4.24133 15.8316 6.50284 15.8316 9.53327C15.8316 12.6919 13.8399 15.2323 11.0785 15.2323C10.1506 15.2323 9.27539 14.7498 8.98116 14.1769C8.98116 14.1769 8.52094 15.9258 8.40777 16.3555C8.20406 17.1546 7.64577 18.1496 7.26854 18.7602C8.12862 19.0241 9.03397 19.1673 9.98459 19.1673C15.047 19.1673 19.1513 15.0664 19.1513 10.0082C19.1663 4.93486 15.0621 0.833984 9.99967 0.833984Z"
+                        fill="#2F302C"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_844_503">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="follow" id="love">
+        <div class="follow__area"></div>
+        <div class="follow__body">
+          <div class="follow__content">
+            <div data-id="" class="follow__wrapper"></div>
+            <div data-cart-empty class="follow__empty">
+              <h1 class="follow__empty_title">
+                ☹ Схоже що ви ще не вподобали ні одного товару
+              </h1>
+              <p class="follow__empty_text">
+                Для того щоб розглянути каталог товарів перейдіть по силці =>
+                <a href="./catalog.html">Catalog</a>
+              </p>
+            </div>
+            <div class="follow__close"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./fonts/demo-files/demo.js"></script>
+    <script src="./js/adaptiveSpoller.js"></script>
+    <script src="./js/someSlider.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      document
+        .getElementById("searchInput1")
+        .addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            var searchText = this.value;
+            sessionStorage.setItem("searchText", searchText);
+            window.location.href = "catalog.html";
+          }
+        });
+      document
+        .getElementById("searchInput")
+        .addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            var searchText = this.value;
+            sessionStorage.setItem("searchText", searchText);
+            window.location.href = "catalog.html";
+          }
+        });
+    </script>
+  </body>
+</html>

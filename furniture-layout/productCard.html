@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./fonts/style.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Furniture</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header light">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__logo">
+              <img src="./img/head-light.png" alt="logo" />
+            </div>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li>
+                  <a href="./index.html" class="navigation__link">HOME</a>
+                </li>
+                <li class="spoiler">
+                  <a
+                    href="#"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                    class="navigation__link"
+                    >SHOP
+                    <i
+                      class="_icon-arrow-down iconca"
+                      style="
+                        transition: 0.3s;
+                        padding-left: 5px;
+                        font-size: 1.2rem;
+                      "
+                    ></i>
+                  </a>
+                  <ul class="spoiler__list">
+                    <li><a href="#" class="spoiler__link first">Menu №1</a></li>
+                    <li><a href="#" class="spoiler__link">Menu №2</a></li>
+                    <li><a href="#" class="spoiler__link">Menu №3</a></li>
+                    <li><a href="#" class="spoiler__link last">Menu №4</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./index.html" class="navigation__link">BLOG</a>
+                </li>
+                <li>
+                  <a href="./index.html" class="navigation__link">ABOUT US</a>
+                </li>
+              </ul>
+
+              <div class="search adaptive">
+                <div class="search__ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.5 17.5L12.5 12.5M14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z"
+                      stroke="#2F302C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  name="text"
+                  id="searchInput1"
+                  required
+                  class="search__input"
+                />
+                <label class="search__label">Furniture</label>
+              </div>
+            </nav>
+            <div class="search">
+              <div class="search__ico">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  style="margin-top: 3px"
+                >
+                  <path
+                    d="M18 17.5L13 12.5M14.6667 8.33333C14.6667 9.09938 14.5158 9.85792 14.2226 10.5657C13.9295 11.2734 13.4998 11.9164 12.9581 12.4581C12.4164 12.9998 11.7734 13.4295 11.0657 13.7226C10.3579 14.0158 9.59938 14.1667 8.83333 14.1667C8.06729 14.1667 7.30875 14.0158 6.60101 13.7226C5.89328 13.4295 5.25022 12.9998 4.70854 12.4581C4.16687 11.9164 3.73719 11.2734 3.44404 10.5657C3.15088 9.85792 3 9.09938 3 8.33333C3 6.78624 3.61458 5.30251 4.70854 4.20854C5.80251 3.11458 7.28624 2.5 8.83333 2.5C10.3804 2.5 11.8642 3.11458 12.9581 4.20854C14.0521 5.30251 14.6667 6.78624 14.6667 8.33333Z"
+                    stroke="#2F302C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                name="text"
+                id="searchInput"
+                required
+                class="search__input"
+              />
+              <label class="search__label" style="color: #7e7f7c"
+                >Furniture</label
+              >
+            </div>
+            <div class="header__block">
+              <div class="header__block_like">
+                <div class="header__block_ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M2.78546 6.48195C2.97391 6.02698 3.25014 5.61358 3.59837 5.26536C3.94659 4.91713 4.35998 4.64091 4.81496 4.45245C5.26993 4.26399 5.75757 4.16699 6.25003 4.16699C6.74249 4.16699 7.23013 4.26399 7.68511 4.45245C8.14008 4.64091 8.55348 4.91713 8.9017 5.26536L10 6.36369L11.0984 5.26536C11.8016 4.56209 12.7555 4.167 13.75 4.167C14.7446 4.167 15.6984 4.56209 16.4017 5.26536C17.105 5.96862 17.5001 6.92246 17.5001 7.91703C17.5001 8.91159 17.105 9.86543 16.4017 10.5687L10 16.9704L3.59837 10.5687C3.25014 10.2205 2.97391 9.80707 2.78546 9.3521C2.597 8.89712 2.5 8.40949 2.5 7.91703C2.5 7.42456 2.597 6.93693 2.78546 6.48195Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="header__block_text">LOVE</div>
+              </div>
+              <div class="header__block_like">
+                <div class="header__block_ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.333 9.16667V5.83333C13.333 4.94928 12.9818 4.10143 12.3567 3.47631C11.7316 2.85119 10.8837 2.5 9.99967 2.5C9.11562 2.5 8.26777 2.85119 7.64265 3.47631C7.01753 4.10143 6.66634 4.94928 6.66634 5.83333V9.16667M4.16634 7.5H15.833L16.6663 17.5H3.33301L4.16634 7.5Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <a href="./cart.html" class="header__block_text">CART</a>
+              </div>
+            </div>
+            <div class="header__burger"><span></span></div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li>
+                <a href="./index.html" class="breadcrumbs__link">Home</a>
+              </li>
+              <li>
+                <a href="./catalog.html" class="breadcrumbs__link">Funiture</a>
+              </li>
+              <li>
+                <span class="breadcrumbs__current">ZENITH MODERN CHAIR</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div data-id class="goods">
+          <div class="container">
+            <div data-id class="goods__body">
+              <div class="goods__swiper">
+                <div class="goods__container swiper-container">
+                  <div class="goods__wrapper swiper-wrapper">
+                    <div class="goods__slide swiper-slide">
+                      <div class="goods__img">
+                        <img
+                          data-image
+                          id="productImage"
+                          src="./img/promo-img.png"
+                          alt="alt"
+                        />
+                      </div>
+                    </div>
+                    <div class="goods__slide swiper-slide">
+                      <div class="goods__img">
+                        <img
+                          id="productImage"
+                          src="./img/promo-img.png"
+                          alt="alt"
+                        />
+                      </div>
+                    </div>
+                    <div class="goods__slide swiper-slide">
+                      <div class="goods__img">
+                        <img
+                          id="productImage"
+                          src="./img/promo-img.png"
+                          alt="alt"
+                        />
+                      </div>
+                    </div>
+                    <div class="goods__slide swiper-slide">
+                      <div class="goods__img">
+                        <img
+                          id="productImage"
+                          src="./img/promo-img.png"
+                          alt="alt"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="goods__mini-slider swiper-container">
+                  <div class="goods__mini-wrapper swiper-wrapper">
+                    <div class="goods__mini-slide swiper-slide">
+                      <div class="goods__mini-img">
+                        <img src="./img/mini-img.png" alt="alt" />
+                      </div>
+                    </div>
+                    <div class="goods__mini-slide swiper-slide">
+                      <div class="goods__mini-img">
+                        <img src="./img/mini-img.png" alt="alt" />
+                      </div>
+                    </div>
+                    <div class="goods__mini-slide swiper-slide">
+                      <div class="goods__mini-img">
+                        <img src="./img/mini-img.png" alt="alt" />
+                      </div>
+                    </div>
+                    <div class="goods__mini-slide swiper-slide">
+                      <div class="goods__mini-img">
+                        <img src="./img/mini-img.png" alt="alt" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="goods__back"></div>
+              </div>
+              <div class="productCard">
+                <div class="productCard__about">
+                  <h1
+                    id="productName"
+                    data-product-name
+                    class="productCard__about_title"
+                  >
+                    ZENITH MODERN CHAIR
+                  </h1>
+                  <div class="productCard__about_box">
+                    <ul class="productCard__about_list">
+                      <li class="_icon-star"></li>
+                      <li class="_icon-star"></li>
+                      <li class="_icon-star"></li>
+                      <li class="_icon-star"></li>
+                      <li class="_icon-star"></li>
+                    </ul>
+                    <div class="productCard__about_sale"><p>ON SALE</p></div>
+                  </div>
+                  <div class="productCard__about_box much">
+                    <p><span>261-</span> products sold</p>
+                    <p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="4"
+                        height="4"
+                        viewBox="0 0 4 4"
+                        fill="none"
+                      >
+                        <circle cx="2" cy="2" r="2" fill="#7E7F7C" />
+                      </svg>
+                    </p>
+                    <p><span>3,1k-</span> products watched</p>
+                  </div>
+                </div>
+                <div class="productCard__type">
+                  <button type="button" class="catalog__control_short">
+                    Type: <span>Long</span>
+                    <i class="_icon-arrow-down"></i>
+                  </button>
+                  <div class="productCard__type_equal">
+                    <div class="productCard__type_plus" style="cursor: pointer">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        data-action="plus"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M10 5V10M10 10V15M10 10H15M10 10H5"
+                          stroke="#2F302C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <p class="productCard__type_number">
+                      Number: <span data-counter>1</span>
+                    </p>
+                    <div
+                      class="productCard__type_minus"
+                      style="cursor: pointer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        data-action="minus"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M15 10H5"
+                          stroke="#2F302C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="productCard__type_color">
+                    <div class="productCard__type_currentColor">
+                      <span class="a"></span>
+                    </div>
+                    <div class="productCard__type_currentColor">
+                      <span class="b"></span>
+                    </div>
+                    <div class="productCard__type_currentColor">
+                      <span class="c"></span>
+                    </div>
+                    <div class="productCard__type_currentColor">
+                      <span class="d"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="productCard__last">
+                  <h2 class="productCard__last_price">
+                    <span id="productPrice" data-price>$235.41</span>
+                  </h2>
+                  <div class="productCard__last_box">
+                    <button type="button" class="productCard__last_button buys">
+                      BUY NOW
+                    </button>
+                    <button
+                      type="button"
+                      class="productCard__last_button add"
+                      data-add
+                    >
+                      ADD TO CART
+                    </button>
+                    <button
+                      data-love
+                      type="button"
+                      class="productCard__last_button love"
+                    >
+                      <svg
+                        data-love
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M2.78546 6.48097C2.97391 6.026 3.25014 5.6126 3.59837 5.26438C3.94659 4.91616 4.35998 4.63993 4.81496 4.45147C5.26993 4.26301 5.75757 4.16602 6.25003 4.16602C6.74249 4.16602 7.23013 4.26301 7.68511 4.45147C8.14008 4.63993 8.55348 4.91616 8.9017 5.26438L10 6.36272L11.0984 5.26438C11.8016 4.56112 12.7555 4.16603 13.75 4.16603C14.7446 4.16603 15.6984 4.56112 16.4017 5.26438C17.105 5.96765 17.5001 6.92148 17.5001 7.91605C17.5001 8.91062 17.105 9.86445 16.4017 10.5677L10 16.9694L3.59837 10.5677C3.25014 10.2195 2.97391 9.8061 2.78546 9.35112C2.597 8.89615 2.5 8.40851 2.5 7.91605C2.5 7.42359 2.597 6.93595 2.78546 6.48097Z"
+                          stroke="#2F302C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="best">
+          <div class="container">
+            <div class="best__body">
+              <div class="best__box">
+                <h1 class="best__title">BEST COMBINED WITH:</h1>
+                <p class="best__text">
+                  THESE COMBINATION WILL MAKE YOUR HOME TONE - SUR - TONE
+                </p>
+              </div>
+              <div class="product bestl">
+                <div data-id="1" class="card">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=1"
+                      ><img src="./img/fil1.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=1"
+                        >URBAN LUX HIGH CHAIR</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=1"
+                        >$266.15</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div data-id="2" class="card">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=2"
+                      ><img src="./img/fil2.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=2"
+                        >MORDERN BLACK HANGING LIGHT</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=2"
+                        >$159.6</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div data-id="3" class="card">
+                  <div class="card__img">
+                    <a data-product href="productCard.html?productId=3"
+                      ><img src="./img/fil3.png" alt="img"
+                    /></a>
+                  </div>
+                  <div class="card__box">
+                    <h1 class="card__title">
+                      <a data-product href="productCard.html?productId=3"
+                        >METRO FUSION TABLE</a
+                      >
+                    </h1>
+                    <ul class="card__list">
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                      <li class="card__item _icon-star"></li>
+                    </ul>
+                    <div class="card__price">
+                      <a data-product href="productCard.html?productId=3"
+                        >$223.30</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust">
+          <div class="container">
+            <div class="trust__body">
+              <h1 class="trust__title">TRUSTED BY</h1>
+              <div class="trust__wrapper">
+                <div class="trust__img">
+                  <img src="./img/trust1.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust2.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust3.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust4.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust5.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust6.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust3.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust6.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust5.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust4.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust1.png" alt="alt" />
+                </div>
+                <div class="trust__img">
+                  <img src="./img/trust2.png" alt="alt" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="container">
+            <div class="answer__body">
+              <div class="answer__box">
+                <h1 class="answer__title">FRENQUENT QUESTION ANSWERS</h1>
+                <p class="answer__text">
+                  SOLVE ALL YOUR PROBLEM ABOUT OUR PRODUCTS
+                </p>
+              </div>
+              <div data-spollers data-one-spoller class="answer__spollers">
+                <div class="answer__spoller">
+                  <button
+                    tabindex="-1"
+                    data-spoller
+                    type="button"
+                    class="answer__button"
+                  >
+                    1. What payment methods do you accept?
+                  </button>
+                  <div class="answer__block">
+                    <p>
+                      Yes, we offer free standard shipping on all orders over a
+                      certain amount within the continental United States. For
+                      orders below that amount or for expedited shipping
+                      options, additional fees may apply.
+                    </p>
+                  </div>
+                </div>
+                <div class="answer__spoller">
+                  <button
+                    tabindex="-1"
+                    data-spoller
+                    type="button"
+                    class="answer__button"
+                  >
+                    2. Do you offer free shipping?
+                  </button>
+                  <div class="answer__block">
+                    <p>
+                      Yes, we offer free standard shipping on all orders over a
+                      certain amount within the continental United States. For
+                      orders below that amount or for expedited shipping
+                      options, additional fees may apply.
+                    </p>
+                  </div>
+                </div>
+                <div class="answer__spoller">
+                  <button
+                    tabindex="-1"
+                    data-spoller
+                    type="button"
+                    class="answer__button _active"
+                  >
+                    3. How long does it take for delivery?
+                  </button>
+                  <div class="answer__block">
+                    <p>
+                      Yes, we offer free standard shipping on all orders over a
+                      certain amount within the continental United States. For
+                      orders below that amount or for expedited shipping
+                      options, additional fees may apply.
+                    </p>
+                  </div>
+                </div>
+                <div class="answer__spoller">
+                  <button
+                    tabindex="-1"
+                    data-spoller
+                    type="button"
+                    class="answer__button"
+                  >
+                    4. What is your return policy?
+                  </button>
+                  <div class="answer__block">
+                    <p>
+                      Yes, we offer free standard shipping on all orders over a
+                      certain amount within the continental United States. For
+                      orders below that amount or for expedited shipping
+                      options, additional fees may apply.
+                    </p>
+                  </div>
+                </div>
+                <div class="answer__spoller">
+                  <button
+                    tabindex="-1"
+                    data-spoller
+                    type="button"
+                    class="answer__button"
+                  >
+                    5. Do you offer assembly or installation services?
+                  </button>
+                  <div class="answer__block">
+                    <p>
+                      Yes, we offer free standard shipping on all orders over a
+                      certain amount within the continental United States. For
+                      orders below that amount or for expedited shipping
+                      options, additional fees may apply.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div class="container">
+            <div class="tabs__body">
+              <nav class="tabs__items">
+                <a href="#tab_01" class="tabs__item active">PRODUCT DETAIL</a>
+                <a href="#tab_02" class="tabs__item">DELIVERY AND RETURN</a>
+              </nav>
+              <div class="tabs__content">
+                <div id="tab_01" class="tabs__block">
+                  <div class="tabs__desc">
+                    <h1 class="tabs__title">DESCRIPTION</h1>
+                    <p class="tabs__text">
+                      Introducing our minimal sofa product - a sleek and stylish
+                      addition to any modern home. With its clean lines and
+                      simple design, this sofa is perfect for those who value
+                      both form and function. The neutral color palette and
+                      understated profile allow it to blend seamlessly into any
+                      living space, while the sturdy frame and comfortable
+                      cushioning ensure maximum comfort and durability. Our
+                      minimal sofa product is crafted from high-quality
+                      materials, making it a long-lasting investment for your
+                      home. Versatile and adaptable, it can be customized with
+                      pillows and throws to suit your personal style. Upgrade
+                      your living space with our minimal sofa product, a
+                      timeless and practical piece of furniture that will
+                      elevate any room.
+                    </p>
+                  </div>
+                  <div class="tabs__fits">
+                    <h1 class="tabs__title">FITS AND FEATURES</h1>
+                    <ol class="tabs__list">
+                      <li>
+                        Minimal sofas have sleek designs with sturdy frames and
+                        firm cushions.
+                      </li>
+                      <li>
+                        They feature neutral-colored upholstery made of leather
+                        or high-quality fabric.
+                      </li>
+                      <li>
+                        Some designs may have modular components or hidden
+                        storage.
+                      </li>
+                      <li>
+                        Minimal sofas are practical, versatile, and timeless.
+                      </li>
+                      <li>
+                        Upgrade your living space with a minimal sofa today.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div id="tab_02" class="tabs__block">
+                  <div class="tabs__fits">
+                    <h1 class="tabs__title">FITS AND FEATURES</h1>
+                    <ol class="tabs__list">
+                      <li>
+                        Minimal sofas have sleek designs with sturdy frames and
+                        firm cushions.
+                      </li>
+                      <li>
+                        They feature neutral-colored upholstery made of leather
+                        or high-quality fabric.
+                      </li>
+                      <li>
+                        Some designs may have modular components or hidden
+                        storage.
+                      </li>
+                      <li>
+                        Minimal sofas are practical, versatile, and timeless.
+                      </li>
+                      <li>
+                        Upgrade your living space with a minimal sofa today.
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="tabs__desc">
+                    <h1 class="tabs__title">DESCRIPTION</h1>
+                    <p class="tabs__text">
+                      Introducing our minimal sofa product - a sleek and stylish
+                      addition to any modern home. With its clean lines and
+                      simple design, this sofa is perfect for those who value
+                      both form and function. The neutral color palette and
+                      understated profile allow it to blend seamlessly into any
+                      living space, while the sturdy frame and comfortable
+                      cushioning ensure maximum comfort and durability. Our
+                      minimal sofa product is crafted from high-quality
+                      materials, making it a long-lasting investment for your
+                      home. Versatile and adaptable, it can be customized with
+                      pillows and throws to suit your personal style. Upgrade
+                      your living space with our minimal sofa product, a
+                      timeless and practical piece of furniture that will
+                      elevate any room.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <div data-spollers="710,max" class="footer__content">
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  CUSTOMER SERVICE
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link">Help & FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Return & Refund</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Shipping Policy</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Customs and Taxes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Customers’s Reviews</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  COMPANY
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >About Japan with love</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Special Deals & Offers</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Terms of Service</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  HELP CENTER
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Order Information</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Shipping Options</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >International Shipping</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Payment Options</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__block">
+                <button
+                  tabindex="-1"
+                  data-spoller
+                  class="footer__button"
+                  type="button"
+                >
+                  RETURN & WARRANTLY
+                </button>
+                <div>
+                  <ul class="footer__block_list">
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Returns & Exchange Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Returns Center</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link">Warranty Policy</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Warranty Registration</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="footer__block_link"
+                        >Warranty Repair Center</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <p class="footer__bottom_text">
+                Furnitur © Copyright 2020, Inc. All rights reserved
+              </p>
+              <div class="footer__bottom_icon">
+                <a href="#" class="footer__bottom_ico _icon-footer1"></a>
+                <a href="#" class="footer__bottom_ico _icon-footer2"></a>
+                <a href="#" class="footer__bottom_ico _icon-footer3"></a>
+                <a href="#" class="footer__bottom_ico">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_844_503)">
+                      <path
+                        d="M9.99968 19.1522C15.0623 19.1522 19.1663 15.0516 19.1663 9.99311C19.1663 4.93467 15.0623 0.833984 9.99968 0.833984C4.93706 0.833984 0.833008 4.93467 0.833008 9.99311C0.833008 15.0516 4.93706 19.1522 9.99968 19.1522Z"
+                        fill="white"
+                      />
+                      <path
+                        class="path1"
+                        d="M9.99967 0.833984C4.93726 0.833984 0.833008 4.93486 0.833008 9.99311C0.833008 13.8754 3.24727 17.1923 6.65742 18.5266C6.57443 17.8029 6.50653 16.6872 6.6876 15.8957C6.85358 15.1795 7.75893 11.3425 7.75893 11.3425C7.75893 11.3425 7.48733 10.7922 7.48733 9.98557C7.48733 8.71159 8.2267 7.76175 9.14714 7.76175C9.93177 7.76175 10.309 8.34975 10.309 9.05082C10.309 9.83481 9.81106 11.0108 9.547 12.1039C9.32821 13.016 10.0072 13.7623 10.905 13.7623C12.5347 13.7623 13.7871 12.0436 13.7871 9.57096C13.7871 7.3773 12.2102 5.84701 9.95441 5.84701C7.34398 5.84701 5.81243 7.79945 5.81243 9.81973C5.81243 10.6037 6.11421 11.448 6.49144 11.9079C6.56689 11.9983 6.57443 12.0812 6.5518 12.1717C6.4839 12.4582 6.32546 13.0838 6.29529 13.212C6.25756 13.3778 6.15948 13.4155 5.98596 13.3326C4.83918 12.7974 4.12245 11.1314 4.12245 9.78204C4.12245 6.89484 6.21984 4.24133 10.1807 4.24133C13.357 4.24133 15.8316 6.50284 15.8316 9.53327C15.8316 12.6919 13.8399 15.2323 11.0785 15.2323C10.1506 15.2323 9.27539 14.7498 8.98116 14.1769C8.98116 14.1769 8.52094 15.9258 8.40777 16.3555C8.20406 17.1546 7.64577 18.1496 7.26854 18.7602C8.12862 19.0241 9.03397 19.1673 9.98459 19.1673C15.047 19.1673 19.1513 15.0664 19.1513 10.0082C19.1663 4.93486 15.0621 0.833984 9.99967 0.833984Z"
+                        fill="#2F302C"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_844_503">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="follow" id="love">
+        <div class="follow__area"></div>
+        <div class="follow__body">
+          <div class="follow__content">
+            <div data-id="" class="follow__wrapper"></div>
+            <div data-cart-empty class="follow__empty">
+              <h1 class="follow__empty_title">
+                ☹ Схоже що ви ще не вподобали ні одного товару
+              </h1>
+              <p class="follow__empty_text">
+                Для того щоб розглянути каталог товарів перейдіть по силці =>
+                <a href="./catalog.html">Catalog</a>
+              </p>
+            </div>
+            <div class="follow__close"></div>
+          </div>
+        </div>
+      </div>
+      <div class="success">
+        <div class="success__body">
+          <div class="success__content">
+            <div class="success__img">
+              <img src="./img/xt.gif" alt="gif" />
+            </div>
+            <h3 class="success__title">
+              Congratulations!<br /><span
+                >The product has been successfully added to the cart!</span
+              >
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./fonts/demo-files/demo.js"></script>
+    <script src="./js/adaptiveSpoller.js"></script>
+    <script src="./js/sliderCard.js"></script>
+    <script src="./js/storage.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/productCard.js"></script>
+    <script>
+      document
+        .getElementById("searchInput1")
+        .addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            var searchText = this.value;
+            sessionStorage.setItem("searchText", searchText);
+            window.location.href = "catalog.html";
+          }
+        });
+      document
+        .getElementById("searchInput")
+        .addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            var searchText = this.value;
+            sessionStorage.setItem("searchText", searchText);
+            window.location.href = "catalog.html";
+          }
+        });
+    </script>
+  </body>
+</html>
